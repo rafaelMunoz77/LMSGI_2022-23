@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simpsons xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="simpsons.xsd">
+    <personajes>Todos los de la serie
+        <personaje nombre="Lisa" coloresRopa="rojo verde blanco">
+            <tiempoAparicion temporada="">128</tiempoAparicion>
+        </personaje>
+        <personaje nombre="Homer" matricula="1234ABC"></personaje>
+    </personajes>
+    <capitulos>
+        <capitulo>
+            <temporada1/>            
+        </capitulo>
+        <capitulo>
+            <temporada2/>
+        </capitulo>
+    </capitulos>
+</simpsons>
