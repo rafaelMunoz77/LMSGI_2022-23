@@ -5,9 +5,27 @@
     <xs:complexType name="tipoSimpsons">
         <xs:all>
             <xs:element name="personajes" type="tipoPersonajes"/>
+            <xs:element name="mascota" type="tipoMascota"/>
             <xs:element name="capitulos" type="tipoCapitulos"/>
         </xs:all>
     </xs:complexType>
+
+    <xs:complexType name="tipoMascota">
+        <xs:attribute name="nombre" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipoPersonaje">
+        <xs:complexContent>
+          <xs:extension base="tipoMascota">
+            <xs:sequence>
+                <xs:element name="tiempoAparicion" minOccurs="0" type="tipoTiempoAparicion"/>
+            </xs:sequence>
+            <xs:attribute name="coloresRopa" type="listaColores"/>
+            <xs:attribute name="matricula" type="tipoMatricula"/>          
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>  
+    
 
     <xs:simpleType name="coloresRGB">
         <xs:restriction base="xs:string">
@@ -37,15 +55,6 @@
         <xs:sequence>
             <xs:element name="personaje" maxOccurs="unbounded" type="tipoPersonaje"/>
         </xs:sequence>
-    </xs:complexType>
-
-    <xs:complexType name="tipoPersonaje">
-        <xs:sequence>
-            <xs:element name="tiempoAparicion" minOccurs="0" type="tipoTiempoAparicion"/>
-        </xs:sequence>
-        <xs:attribute name="nombre" type="xs:string"/>
-        <xs:attribute name="coloresRopa" type="listaColores"/>
-        <xs:attribute name="matricula" type="tipoMatricula"/>
     </xs:complexType>
 
     <xs:simpleType name="tipoMatricula">

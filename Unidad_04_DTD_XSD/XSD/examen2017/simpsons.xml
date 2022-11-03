@@ -7,6 +7,7 @@ xsi:noNamespaceSchemaLocation="simpsons.xsd">
         </personaje>
         <personaje nombre="Homer" matricula="1234ABC"></personaje>
     </personajes>
+    <mascota nombre="Santa's Little Helper"/>
     <capitulos>
         <capitulo>
             <temporada1/>            

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tiendaMascotas nombre="Mascotas Villalba, S.A.">
+<tiendaMascotas nombre="Mascotas Villalba, S.A." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="mascotas.xsd">
 	<reptiles>
 		<reptil>Boa constrictor
 			<peso unidadMedida="Kg">65</peso>
@@ -12,21 +13,21 @@
 		</reptil>
 	</reptiles>
 	<mamiferos>
-		<mamifero>ABC-(12345)
+		<mamifero codigo="ABC-(12345)">
 			<nombre valor="Toby"/>
 			<raza>
 				<perro/>
 			</raza>
 			<descripcion>Un perro precioso</descripcion>
 		</mamifero>
-		<mamifero>ZYX-(98765)
+		<mamifero codigo="ZYX-(98765)">
 			<nombre valor="Willy"/>
 			<raza>
 				<orca/>
 			</raza>
 			<descripcion>Es una orca muy graciosa</descripcion>
 		</mamifero>
-		<mamifero>GHI-(55567)
+		<mamifero codigo="GHI-(55567)">
 			<nombre valor="Flipper"/>
 			<raza>
 				<delfin/>
